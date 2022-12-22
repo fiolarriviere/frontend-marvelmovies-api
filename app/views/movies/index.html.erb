@@ -1,11 +1,9 @@
-<div>
-  <div class="container">
-    <div>
-      <h1>Marvel API</h1>
-    </div>
+
+<div class="container">
+  <h1>Marvel API</h1>
     <div class="card-product">
       <% @movies.each do |movie| %>
-        <img src="<%= movie["image_url"] %>" />
+        <img src="<%= movie["image_url"] %>"/>
         <div class="card-product-infos">
           <h3><%= movie["name"] %></h3>
           <h4><%= movie["director"] %></h4>
@@ -14,5 +12,4 @@
         </div>
       <% end %>
     </div>
-  </div>
 </div>
